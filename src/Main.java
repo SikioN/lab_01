@@ -12,10 +12,8 @@ public class Main {
         int[] check = {6, 7, 10, 12, 13, 14, 16, 18, 19};
 
         for (int i = 0; i < END - START + 1; i++) c[i] = (short) (i + START);
-        for (int i = 0; i < LENGTH; i++) {
-            double value = MIN + random() * ((MAX - MIN) + 1);
-            x[i] = ceil(value * pow(10, 4)) / pow(10, 4);
-        }
+        for (int i = 0; i < LENGTH; i++) x[i] = MIN + random() * ((MAX - MIN) + 1);
+
 
         for (int i = 0; i < END - START + 1; i++) {
             for (int j = 0; j < LENGTH; j++) {
